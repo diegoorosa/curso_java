@@ -24,8 +24,6 @@ public class OperadoresLogicos {
 		// false || true = true
 		// false || false = false
 
-		
-//		testeee 123 123 123
 		sc.close();
 
 	}
