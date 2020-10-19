@@ -1,1 +1,3 @@
-# curso_java
+# Curso Java
+
+## Instalando e configurando o Git
