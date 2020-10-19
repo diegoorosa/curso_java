@@ -13,18 +13,18 @@ public class ComparandoInformacoes {
 		System.out.print("Escreva seu nome: ");
 		String nome = sc.nextLine();
 
-		System.out.println("O nome é identico?");
+		System.out.println("O nome ï¿½ identico?");
 		if (nomeCadastrado.equals(nome)) {
 			System.out.println("Sim");
 		} else {
-			System.out.println("Não");
+			System.out.println("Nï¿½o");
 		}
 
-		System.out.println("O nome é igual?");
+		System.out.println("O nome ï¿½ igual?");
 		if (nomeCadastrado.equalsIgnoreCase(nome)) {
 			System.out.println("Sim");
 		} else {
-			System.out.println("Não");
+			System.out.println("Nï¿½o");
 		}
 
 //		System.out.println("O nome existe? " + (nomeCadastrado.equalsIgnoreCase(nome)));
