@@ -2,7 +2,7 @@ package loop;
 
 import java.util.Scanner;
 
-public class UtilizandoLoop2_Menu {
+public class UtilizandoLoop2_While_Menu {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
