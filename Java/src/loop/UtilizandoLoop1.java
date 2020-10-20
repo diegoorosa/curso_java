@@ -15,7 +15,7 @@ public class UtilizandoLoop1 {
 			idade = Integer.parseInt(sc.nextLine());
 
 		}
-
+//teste casa
 		sc.close();
 	}
 
