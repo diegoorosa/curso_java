@@ -9,19 +9,17 @@ public class Exemplo1 {
 		System.out.println("Escolha uma opção:");
 		System.out.println("1 - Cadastro de pessoas");
 		System.out.println("2 - Cadastro de produto");
-		
+
 		int opcao = Integer.parseInt(sc.nextLine());
-		
-		if(opcao == 1) {
+
+		if (opcao == 1) {
 			System.out.println("Entrou no cadastro de pessoas.");
-		}else if(opcao == 2) {
+		} else if (opcao == 2) {
 			System.out.println("Entrou no cadastro de produto.");
-		}else {
+		} else {
 			System.out.println("Nenhuma opção valida");
 		}
-		
-		
-		
+
 		sc.close();
 	}
 
