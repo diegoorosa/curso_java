@@ -26,21 +26,19 @@ public class Exercicio11 {
 
 			if (salario == 0) {
 				break;
-
-			}
+			}// iff
 
 			if (abono <= 100) {
 				abono = 100;
 				totalMinimo++;
-			}
+			}//if
 
 			totalAbono = totalAbono + abono;
 
 			if (abono > maiorAbono) {
 				maiorAbono = abono;
-			}
-
-		}
+			}//if
+		}//while
 
 		System.out.println("Foram processados " + (i - 1) + " colaboradores");
 		System.out.println("Total gasto com abonos: " + totalAbono);
@@ -49,5 +47,5 @@ public class Exercicio11 {
 
 		sc.close();
 
-	}
-}
+	}//public static main
+}//public class exercicio11
