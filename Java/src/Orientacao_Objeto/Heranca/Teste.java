@@ -7,48 +7,19 @@ public class Teste {
 	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
-		Aluno aluno = new Aluno();
-		Professor professor = new Professor();
-
-		System.out.print("Digite o nome do aluno: ");
-		aluno.setNome(sc.next());
-		System.out.print("Digite o endereço do aluno: ");
-		aluno.setEndereco(sc.next());
-		System.out.print("Digite o telefone do aluno: ");
-		aluno.setTelefone(sc.next());
-		System.out.print("Digite o celular do aluno: ");
-		aluno.setTelefoneCelular(sc.next());
-		System.out.print("Digite o cpf do aluno: ");
-		aluno.setCpf(sc.next());
-
-		System.out.print("Digite o nome do professor: ");
-		professor.setNome(sc.next());
-		System.out.print("Digite o endereço do professor: ");
-		professor.setEndereco(sc.next());
-		System.out.print("Digite o telefone do professor: ");
-		professor.setTelefone(sc.next());
-		System.out.print("Digite o celular do professor: ");
-		professor.setTelefoneCelular(sc.next());
-		System.out.print("Digite o cpf do professor: ");
-		professor.setCpf(sc.next());
-
-		System.out.println();
-
-		System.out.println("Dados do Aluno");
-		System.out.println("Nome: " + aluno.getNome());
-		System.out.println("CPF: " + aluno.getCpf());
-		System.out.println("Endereço: " + aluno.getEndereco());
-		System.out.println("Telefone: " + aluno.getTelefone());
-		System.out.println("Celular: " + aluno.getTelefoneCelular());
-		System.out.println();
-
-		System.out.println("Dados do Professor");
-		System.out.println("Nome: " + professor.getNome());
-		System.out.println("CPF: " + professor.getCpf());
-		System.out.println("Endereço: " + professor.getEndereco());
-		System.out.println("Telefone: " + professor.getTelefone());
-		System.out.println("Celular: " + professor.getTelefoneCelular());
-
+		
+		Pessoa pessoa = new Pessoa();
+		Pessoa aluno = new Aluno();
+		Pessoa professor = new Professor();
+		
+		pessoa.setEndereco("Rua 1, num 1");
+		aluno.setEndereco("Rua 2, num 2");		
+		professor.setEndereco("Rua 3, num 3");
+		
+		System.out.println(pessoa.obterEtiquedaEndereco());
+		System.out.println(aluno.obterEtiquedaEndereco());
+		System.out.println(professor.obterEtiquedaEndereco());
+		
 		sc.close();
 
 	}// main
