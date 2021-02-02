@@ -50,8 +50,6 @@ public class Program {
 		for (Employee emp : list) {
 			System.out.println(emp);
 		} // for
-		
-		//testee1231231231231
 
 		sc.close();
 	}
