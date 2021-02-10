@@ -1,10 +1,13 @@
 package Composicao3Exercicio;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
 public class Order {
+
+	SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 
 	private Date moment;
 	private OrderStatus status;
@@ -49,10 +52,33 @@ public class Order {
 	public List<OrderItem> getOrderItem() {
 		return orderItem;
 	}
-
 	
-	
+	public void addItem(OrderItem orderItem) {
+		this.orderItem.add(orderItem);
+	}
 
+	public void removeItem(OrderItem orderItem) {
+		this.orderItem.remove(orderItem);
+	}
+	
+	public double total() {
+		double sum = 0.0;
+		for(OrderItem item : orderItem) {
+			sum += item.subTotal();
+		}
+		return sum;
+	}
+
+	@Override
+	public String toString() {
+		StringBuilder sb = new StringBuilder();
+		sb.append("Order moment: ");
+		sb.append(sdf.format(moment) + "\n");
+		
+		
+		
+		
+	}
 	
 	
 	
