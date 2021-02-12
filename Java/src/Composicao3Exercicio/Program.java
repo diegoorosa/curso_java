@@ -21,58 +21,37 @@ public class Program {
 		String email = sc.next();
 		System.out.print("Birth date (DD/MM/YYYY): ");
 		Date birthDate = sdf.parse(sc.next());
+		
 		Client client = new Client(name, email, birthDate);
-		
-		
+
 		System.out.println("Enter order data:");
 		System.out.print("Status: ");
-		String status = sc.next();
+		OrderStatus status = OrderStatus.valueOf(sc.next());
 
-		Order order = new Order(new Date(), OrderStatus.valueOf(status), client);
-		
+		Order order = new Order(new Date(), status, client);
+
 		System.out.print("How many items to this order: ");
 		int n = sc.nextInt();
-		
-		
 		for (int i = 1; i <= n; i++) {
 			System.out.println("Enter #" + i + " item data:");
 			System.out.print("Product name: ");
-			String nameProduct = sc.nextLine();
-			sc.next();
+			sc.nextLine();
+			String productName = sc.nextLine();
 			System.out.print("Product price: ");
 			Double price = sc.nextDouble();
-			Product product = new Product(nameProduct, price);
-			
+			Product product = new Product(productName, price);
+
 			System.out.print("Quantity: ");
 			int quantity = sc.nextInt();
+
 			OrderItem orderItem = new OrderItem(quantity, price, product);
 			order.addItem(orderItem);
 		}
-		
-		System.out.println("ORDER SUMMARY:");
-		System.out.println("Order moment: " + order.getMoment());
-		System.out.println("Order Status: " + order.getStatus());
-		System.out.println(client);
-		System.out.println("Order items:");
-		order.getOrderItem().
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+		System.out.println();
+		System.out.println(order);
+
 		sc.close();
-		
+
 	}
 
 }

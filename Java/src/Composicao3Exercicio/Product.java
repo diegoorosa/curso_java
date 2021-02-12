@@ -1,10 +1,10 @@
 package Composicao3Exercicio;
 
 public class Product {
-	
+
 	private String name;
 	private Double price;
-	
+
 	public Product() {
 	}
 
@@ -29,7 +29,4 @@ public class Product {
 		this.price = price;
 	}
 
-	
-	
-	
 }
