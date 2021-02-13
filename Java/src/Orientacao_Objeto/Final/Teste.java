@@ -20,7 +20,7 @@ public class Teste {
 		System.out.println(Constantes.REDE_SOCIAL);
 		
 		//em Final deve declarar com letra maiuscula
-		final int TOTAL = 1;
+		int TOTAL = 1;
 		TOTAL = TOTAL +1;
 		System.out.println(TOTAL);
 		
