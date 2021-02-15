@@ -1,9 +1,9 @@
 package Heranca2;
 
-public class SavingsAccount extends Account {
+public final class SavingsAccount extends Account {
 
 	private Double interestRate;
-	
+
 	public SavingsAccount() {
 		super();
 	}
@@ -20,15 +20,13 @@ public class SavingsAccount extends Account {
 	public void setInterestRate(Double interestRate) {
 		this.interestRate = interestRate;
 	}
-	
+
 	public void updateBalance() {
 		balance += balance * interestRate;
 	}
-	
+
 	@Override
-	public void withdraw(Double amount) {
+	public final void withdraw(Double amount) {
 		balance -= amount;
 	}
-	
-	
 }
